@@ -4,7 +4,6 @@
   var root = document.documentElement;
   var header = document.querySelector('.site-header');
   var toggle = document.querySelector('.theme-toggle');
-  var yearEl = document.getElementById('year');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- theme ---------- */
@@ -164,7 +163,4 @@
     btn.addEventListener('click', function () { copyEmail(btn); });
   });
 
-  /* ---------- year ---------- */
-
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();
