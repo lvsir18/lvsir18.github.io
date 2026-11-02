@@ -87,6 +87,83 @@
     sections.forEach(function (section) { navObserver.observe(section); });
   }
 
+  /* ---------- email menu ---------- */
+
+  var emailItem = document.querySelector('.email-item');
+  var emailTrigger = document.querySelector('.email-trigger');
+  var emailMenu = document.getElementById('email-menu');
+
+  function setMenu(open) {
+    if (!emailTrigger || !emailMenu) return;
+    emailMenu.hidden = !open;
+    emailTrigger.setAttribute('aria-expanded', String(open));
+  }
+
+  if (emailItem && emailTrigger && emailMenu) {
+    emailTrigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      setMenu(emailMenu.hidden);
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!emailMenu.hidden && !emailItem.contains(e.target)) setMenu(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !emailMenu.hidden) {
+        setMenu(false);
+        emailTrigger.focus();
+      }
+    });
+
+    emailMenu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setMenu(false);
+    });
+  }
+
+  /* ---------- copy email ---------- */
+
+  function legacyCopy(text) {
+    var field = document.createElement('textarea');
+    field.value = text;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.top = '-1000px';
+    document.body.appendChild(field);
+    field.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+    document.body.removeChild(field);
+    return ok;
+  }
+
+  function copyEmail(btn) {
+    var text = btn.getAttribute('data-copy-mail');
+    var original = btn.dataset.label || btn.textContent;
+    btn.dataset.label = original;
+
+    function feedback(ok) {
+      btn.textContent = ok ? '已复制到剪贴板' : '复制失败，请手动选择';
+      clearTimeout(btn.copyTimer);
+      btn.copyTimer = setTimeout(function () {
+        btn.textContent = original;
+      }, 1800);
+    }
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(
+        function () { feedback(true); },
+        function () { feedback(legacyCopy(text)); }
+      );
+    } else {
+      feedback(legacyCopy(text));
+    }
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy-mail]'), function (btn) {
+    btn.addEventListener('click', function () { copyEmail(btn); });
+  });
+
   /* ---------- year ---------- */
 
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());

@@ -77,11 +77,17 @@
               <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
             </a>
           </li>
-          <li>
-            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lvxujie1227%40gmail.com" target="_blank" rel="noopener">
+          <li class="email-item">
+            <button class="email-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="email-menu">
               Email
-              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
-            </a>
+              <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6.5l4 4 4-4"/></svg>
+            </button>
+            <div class="email-menu" id="email-menu" hidden>
+              <p class="email-menu-addr">lvxujie1227@gmail.com</p>
+              <button class="email-action" type="button" data-copy-mail="lvxujie1227@gmail.com">复制邮箱地址</button>
+              <a class="email-action" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lvxujie1227%40gmail.com" target="_blank" rel="noopener">用 Gmail 写信</a>
+              <a class="email-action" href="mailto:lvxujie1227@gmail.com">用系统邮件客户端</a>
+            </div>
           </li>
           <li>
             <a href="https://orcid.org/0009-0008-9338-4889" target="_blank" rel="noopener">
@@ -323,7 +329,7 @@
           <div class="side-block">
             <p class="side-label">联系</p>
             <ul class="side-list side-list--links">
-              <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lvxujie1227%40gmail.com" target="_blank" rel="noopener">lvxujie1227@gmail.com</a></li>
+              <li><button class="link-copy" type="button" data-copy-mail="lvxujie1227@gmail.com" title="点击复制邮箱地址">lvxujie1227@gmail.com</button></li>
               <li><a href="https://github.com/lvsir18" target="_blank" rel="noopener">github.com/lvsir18</a></li>
               <li><a href="https://orcid.org/0009-0008-9338-4889" target="_blank" rel="noopener">ORCID 0009-0008-9338-4889</a></li>
             </ul>
