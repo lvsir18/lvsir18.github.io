@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吕薛杰 Xujie Lv — LLM · NLP · RAG/KAG</title>
+  <meta name="description" content="吕薛杰（Xujie Lv / Peter），四川大学计算机学院。研究大语言模型与自然语言处理、检索与知识增强生成（RAG/KAG）、强化学习，以及智能空中交通中的时空建模与演化优化。">
+  <meta name="author" content="Xujie Lv">
+  <meta property="og:title" content="吕薛杰 Xujie Lv">
+  <meta property="og:description" content="LLM · NLP · RAG/KAG · RL · 智能空中交通">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23fcfbf9'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='%231a1a1a' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "吕薛杰",
+      "alternateName": "Xujie Lv",
+      "jobTitle": "Researcher",
+      "affiliation": { "@type": "CollegeOrUniversity", "name": "四川大学计算机学院" },
+      "email": "mailto:lvxujie1227@gmail.com",
+      "url": "https://github.com/lvsir18",
+      "sameAs": [
+        "https://github.com/lvsir18",
+        "https://orcid.org/0009-0008-9338-4889"
+      ],
+      "knowsAbout": ["Large Language Models", "Natural Language Processing", "RAG", "Knowledge Augmented Generation", "Reinforcement Learning", "Air Traffic Management"]
+    }
+  </script>
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (!stored && prefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="返回顶部">Xujie&nbsp;Lv</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#research">研究</a>
+        <a href="#projects">项目</a>
+        <a href="#notes">笔记</a>
+        <a href="#about">关于</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <p class="eyebrow">四川大学 · 计算机学院（软件学院）</p>
+        <h1>吕薛杰<span class="h1-en">Xujie Lv</span></h1>
+        <p class="lede">
+          研究大语言模型与自然语言处理，关注检索与知识增强生成、强化学习，
+          以及智能空中交通中的时空交互建模与演化优化。
+        </p>
+        <ul class="hero-links">
+          <li>
+            <a href="https://github.com/lvsir18" target="_blank" rel="noopener">
+              GitHub
+              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:lvxujie1227@gmail.com">
+              Email
+              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://orcid.org/0009-0008-9338-4889" target="_blank" rel="noopener">
+              ORCID
+              <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-portrait">
+        <img src="https://github.com/lvsir18.png" width="132" height="132" alt="吕薛杰的头像" loading="eager">
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section wrap" id="research">
+      <div class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2>研究方向<span class="h2-en">Research</span></h2>
+      </div>
+
+      <div class="research-grid">
+        <div class="research-item reveal">
+          <h3>大语言模型与自然语言处理</h3>
+          <p>围绕模型能力边界展开：预训练与后训练、参数高效微调、长上下文下的结构化输出稳定性，以及可评测的模型行为分析。</p>
+        </div>
+        <div class="research-item reveal">
+          <h3>检索与知识增强生成</h3>
+          <p>RAG 与 KAG 路线：schema 驱动的知识构建、图查询与向量召回混合检索、多跳推理，以及答案的可溯源与可验证。</p>
+        </div>
+        <div class="research-item reveal">
+          <h3>强化学习与决策</h3>
+          <p>深度强化学习在序列决策与智能体行为建模中的应用，关注奖励设计、样本效率与训练稳定性。</p>
+        </div>
+        <div class="research-item reveal">
+          <h3>智能空中交通</h3>
+          <p>多航空器轨迹预测与机场场面运行优化：LLM 增强的时空交互建模，冲突感知的滑行道路径规划。</p>
+        </div>
+        <div class="research-item reveal">
+          <h3>演化计算与优化</h3>
+          <p>面向组合优化与路径规划问题的演化算法设计，兼顾解质量与求解效率。</p>
+        </div>
+        <div class="research-item reveal">
+          <h3>端侧智能与语音</h3>
+          <p>量化部署与推理加速；语音增强、识别、说话人识别与合成等语音链路的工程实践。</p>
+        </div>
+      </div>
+
+      <div class="now reveal">
+        <p class="now-label">当前工作 · Ongoing</p>
+        <ul class="now-list">
+          <li>
+            <span class="now-title">SCIKAG</span>
+            <span class="now-desc">面向生物学 AI for Science 的知识增强问答系统，融合十万级异构文献与结构化生物数据。</span>
+          </li>
+          <li>
+            <span class="now-title">多航空器轨迹预测</span>
+            <span class="now-desc">以 LLM 增强的时空交互建模，提升复杂场面下的轨迹预测精度。</span>
+          </li>
+          <li>
+            <span class="now-title">机场滑行道路径规划</span>
+            <span class="now-desc">冲突感知的演化优化方法，面向真实场面约束下的调度与路径生成。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section wrap" id="projects">
+      <div class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2>项目与作品<span class="h2-en">Selected Work</span></h2>
+      </div>
+
+      <ol class="project-list">
+        <li class="project reveal">
+          <div class="project-top">
+            <h3>SCIKAG<span class="badge">精选</span></h3>
+            <span class="project-meta">2026 · Python · Apache-2.0</span>
+          </div>
+          <p class="project-desc">
+            面向生物学 AI for Science 的结构化知识增强问答系统，基于 OpenSPG KAG 构建。
+            以知识图谱保证事实精确、以模型保证关联推理、以原文段落保证可溯源，支持多知识库、
+            schema 驱动的实体关系抽取与混合检索推理。
+          </p>
+          <p class="tags"><span>KAG</span><span>知识图谱</span><span>混合检索</span><span>可溯源问答</span></p>
+          <a class="project-link" href="https://github.com/lvsir18/SCIKAG" target="_blank" rel="noopener">
+            查看仓库
+            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <div class="project-top">
+            <h3>GoldAgent</h3>
+            <span class="project-meta">2026 · Python · MIT</span>
+          </div>
+          <p class="project-desc">
+            面向黄金市场研究的全栈 AI Agent：从数据采集、分析推理到结论输出形成闭环，
+            强调过程可观测与结果可评测，让智能体的每一步判断都有据可查。
+          </p>
+          <p class="tags"><span>Agent</span><span>LLM 应用</span><span>可观测</span><span>可评测</span></p>
+          <a class="project-link" href="https://github.com/lvsir18/GoldAgent" target="_blank" rel="noopener">
+            查看仓库
+            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <div class="project-top">
+            <h3>Edge LLM on Jetson AGX Orin</h3>
+            <span class="project-meta">2026 · 部署实测</span>
+          </div>
+          <p class="project-desc">
+            在 Jetson AGX Orin 64GB 上部署本地大模型的完整实测：从 vLLM INT4 到 llama.cpp Q4_K_M，
+            记录吞吐、显存占用与工程取舍，以及在真实边缘硬件上运行模型的现实边界。
+          </p>
+          <p class="tags"><span>端侧推理</span><span>量化</span><span>vLLM</span><span>llama.cpp</span></p>
+          <a class="project-link" href="https://github.com/lvsir18/Edge-LLM-on-Jetson-Orin-64GB" target="_blank" rel="noopener">
+            查看仓库
+            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <div class="project-top">
+            <h3>语音识别与处理课程实验</h3>
+            <span class="project-meta">2026 · Python · MIT</span>
+          </div>
+          <p class="project-desc">
+            四川大学语音识别与处理课程实验集合，包含语音增强、语音识别、说话人识别与语音合成
+            四个独立实验，覆盖从信号处理到深度模型建模的完整语音链路。
+          </p>
+          <p class="tags"><span>ASR</span><span>语音增强</span><span>说话人识别</span><span>TTS</span></p>
+          <a class="project-link" href="https://github.com/lvsir18/Sichuan-University-2026-Autumn-Speech-Recognition-and-Processing-Lecture-Experiment" target="_blank" rel="noopener">
+            查看仓库
+            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <div class="project-top">
+            <h3>Claw Voice Agent</h3>
+            <span class="project-meta">2026 · Python · 协作项目</span>
+          </div>
+          <p class="project-desc">
+            本地优先的语音智能体工作台，整合 OpenClaw、语音识别、唤醒词与语音合成，
+            在完全本地的环境中完成「唤醒—识别—理解—回应」的实时闭环。
+          </p>
+          <p class="tags"><span>Voice Agent</span><span>Local-first</span><span>OpenClaw</span></p>
+          <a class="project-link" href="https://github.com/lvsir18/Claw-Voice-Agent" target="_blank" rel="noopener">
+            查看仓库
+            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Notes -->
+    <section class="section wrap" id="notes">
+      <div class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2>学习与笔记<span class="h2-en">Notes</span></h2>
+      </div>
+      <p class="section-intro reveal">把读过的课程整理成可复用的文字，公开分享，也方便自己回看。</p>
+
+      <ul class="note-list">
+        <li class="note reveal">
+          <a href="https://github.com/lvsir18/CS336Spring-2026-Learning-Notes" target="_blank" rel="noopener">
+            <span class="note-title">CS336 Spring 2026 学习笔记</span>
+            <span class="note-desc">斯坦福《Language Modeling from Scratch》课程笔记，从数据、分词到训练与推理的完整梳理。</span>
+            <span class="note-meta">80 stars</span>
+          </a>
+        </li>
+        <li class="note reveal">
+          <a href="https://github.com/lvsir18/CS224n-Winter-2026-Learning-Notes" target="_blank" rel="noopener">
+            <span class="note-title">CS224N Winter 2026 学习笔记</span>
+            <span class="note-desc">19 讲系统笔记：Word Vectors、RNN、Attention、Transformer、预训练与后训练、PEFT、RAG、Agents 与 Reasoning。</span>
+            <span class="note-meta">26 stars</span>
+          </a>
+        </li>
+        <li class="note reveal">
+          <a href="https://github.com/lvsir18/CS336Spring-2026-Learning-Assignments" target="_blank" rel="noopener">
+            <span class="note-title">CS336 作业实现与结果</span>
+            <span class="note-desc">从零实现语言模型各组件：Tokenizer、Transformer、训练循环与分布式训练，附完整实验记录。</span>
+            <span class="note-meta">3 stars</span>
+          </a>
+        </li>
+        <li class="note reveal">
+          <a href="https://github.com/lvsir18/AI-Course-Notes" target="_blank" rel="noopener">
+            <span class="note-title">AI Course Notes（参与维护）</span>
+            <span class="note-desc">303 份 AI/LLM 中文讲义，支持在线阅读、PDF 下载与 LaTeX 源码，覆盖 CS336、CS224R、CS25 与 Agent 工程实践。</span>
+            <span class="note-meta">Fork &amp; 贡献</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section wrap" id="about">
+      <div class="section-head reveal">
+        <span class="section-index">04</span>
+        <h2>关于<span class="h2-en">About</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            我是吕薛杰，也可以叫我 Peter。目前在四川大学计算机学院（软件学院）学习，
+            喜欢把一个问题拆到足够小，再用代码和实验把它验证清楚。
+          </p>
+          <p>
+            我的工作大致集中在两处：一是让语言模型在专业领域里说得更准确、更可查——
+            这也是 SCIKAG 想解决的事；二是把学习与建模用在有真实约束的系统里，
+            比如空中交通的轨迹预测与场面路径规划。
+          </p>
+          <p>
+            平时会把课程与论文整理成笔记公开分享，也会折腾端侧部署与语音链路这类需要动手的部分。
+          </p>
+        </div>
+
+        <div class="about-side reveal">
+          <div class="side-block">
+            <p class="side-label">教育与身份</p>
+            <ul class="side-list">
+              <li>四川大学 计算机学院（软件学院）</li>
+              <li>本科 · 硕士</li>
+              <li>GitHub Pro</li>
+            </ul>
+          </div>
+          <div class="side-block">
+            <p class="side-label">常写</p>
+            <ul class="side-list">
+              <li>Python · PyTorch</li>
+              <li>LLM · NLP · RAG / KAG</li>
+              <li>RL · 图神经网络 · 演化计算</li>
+            </ul>
+          </div>
+          <div class="side-block">
+            <p class="side-label">联系</p>
+            <ul class="side-list side-list--links">
+              <li><a href="mailto:lvxujie1227@gmail.com">lvxujie1227@gmail.com</a></li>
+              <li><a href="https://github.com/lvsir18" target="_blank" rel="noopener">github.com/lvsir18</a></li>
+              <li><a href="https://orcid.org/0009-0008-9338-4889" target="_blank" rel="noopener">ORCID 0009-0008-9338-4889</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> 吕薛杰 · Xujie Lv</p>
+      <p class="footer-quiet">由文字与留白构成</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
