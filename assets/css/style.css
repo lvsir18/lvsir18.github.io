@@ -626,6 +626,31 @@ h2 {
 .about-text p + p { margin-top: 16px; }
 .about-text p:first-child { color: var(--text); }
 
+.about-text em {
+  font-family: var(--serif);
+  font-style: italic;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+
+.about-text .about-motto {
+  margin-top: 30px;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  color: var(--text);
+}
+
+.about-text .about-motto::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  margin-bottom: 16px;
+  background: var(--line-strong);
+}
+
 .about-side { display: grid; gap: 26px; align-content: start; }
 
 .side-label {
