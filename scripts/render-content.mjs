@@ -87,13 +87,13 @@ function validateStarredItem(item, index) {
 
 function renderStarredItem(item) {
   const [owner, name] = item.repo.split('/');
-  return `        <li class="starred reveal">
+  return `        <li class="starred reveal" data-repo="${esc(item.repo)}">
           <a href="https://github.com/${esc(item.repo)}" target="_blank" rel="noopener">
             <span class="starred-title"><span class="starred-owner">${esc(owner)} /</span> ${esc(name)}</span>
             <span class="starred-desc">${esc(item.description)}</span>
             <span class="starred-meta">
               <span class="starred-lang"><span class="lang-dot" style="--dot: ${esc(item.languageColor)}"></span>${esc(item.language)}</span>
-              <span class="starred-stars">${STAR_SVG}<span class="sr-only">GitHub stars</span>${numberFormat.format(item.stars)}</span>
+              <span class="starred-stars">${STAR_SVG}<span class="sr-only">GitHub stars</span><span class="star-count">${numberFormat.format(item.stars)}</span></span>
             </span>
           </a>
         </li>`;
