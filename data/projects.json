@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "name": "SCIKAG",
+      "badge": "精选",
+      "meta": "2026 · Python · Apache-2.0",
+      "description": "面向生物学 AI for Science 的结构化知识增强问答系统，基于 OpenSPG KAG 构建。以知识图谱保证事实精确、以模型保证关联推理、以原文段落保证可溯源，支持多知识库、schema 驱动的实体关系抽取与混合检索推理。",
+      "tags": [
+        "KAG",
+        "知识图谱",
+        "混合检索",
+        "可溯源问答"
+      ],
+      "url": "https://github.com/lvsir18/SCIKAG",
+      "hidden": false
+    },
+    {
+      "name": "GoldAgent",
+      "meta": "2026 · Python · MIT",
+      "description": "面向黄金市场研究的全栈 AI Agent：从数据采集、分析推理到结论输出形成闭环，强调过程可观测与结果可评测，让智能体的每一步判断都有据可查。",
+      "tags": [
+        "Agent",
+        "LLM 应用",
+        "可观测",
+        "可评测"
+      ],
+      "url": "https://github.com/lvsir18/GoldAgent",
+      "hidden": false
+    },
+    {
+      "name": "Edge LLM on Jetson AGX Orin",
+      "meta": "2026 · 部署实测",
+      "description": "在 Jetson AGX Orin 64GB 上部署本地大模型的完整实测：从 vLLM INT4 到 llama.cpp Q4_K_M，记录吞吐、显存占用与工程取舍，以及在真实边缘硬件上运行模型的现实边界。",
+      "tags": [
+        "端侧推理",
+        "量化",
+        "vLLM",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/lvsir18/Edge-LLM-on-Jetson-Orin-64GB",
+      "hidden": true
+    },
+    {
+      "name": "语音识别与处理课程实验",
+      "meta": "2026 · Python · MIT",
+      "description": "四川大学语音识别与处理课程实验集合，包含语音增强、语音识别、说话人识别与语音合成四个独立实验，覆盖从信号处理到深度模型建模的完整语音链路。",
+      "tags": [
+        "ASR",
+        "语音增强",
+        "说话人识别",
+        "TTS"
+      ],
+      "url": "https://github.com/lvsir18/Sichuan-University-2026-Autumn-Speech-Recognition-and-Processing-Lecture-Experiment",
+      "hidden": true
+    },
+    {
+      "name": "Claw Voice Agent",
+      "meta": "2026 · Python · 协作项目",
+      "description": "本地优先的语音智能体工作台，整合 OpenClaw、语音识别、唤醒词与语音合成，在完全本地的环境中完成「唤醒—识别—理解—回应」的实时闭环。",
+      "tags": [
+        "Voice Agent",
+        "Local-first",
+        "OpenClaw"
+      ],
+      "url": "https://github.com/lvsir18/Claw-Voice-Agent",
+      "hidden": true
+    }
+  ]
+}

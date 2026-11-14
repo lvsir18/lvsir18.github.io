@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "repo": "deepseek-ai/deepseek-harness",
+      "description": "DeepSeek 开源的智能体运行框架，采用一切皆插件架构、由 Cordis 驱动，并提供 Web UI。",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 280227,
+      "hidden": false
+    },
+    {
+      "repo": "shareAI-lab/learn-claude-code",
+      "description": "以 Python 从零实现一个 nano 版 Claude Code 式 agent harness 的教学仓库，逐课拆解 agent 循环、工具调用、权限与上下文管理等机制。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 80366,
+      "hidden": false
+    },
+    {
+      "repo": "yetone/magpie",
+      "description": "菜单栏应用兼本地网关，为 Claude Code、Codex 等编码智能体统一选择任意模型和账号，配额耗尽时自动转用下一个。",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 35897,
+      "hidden": false
+    },
+    {
+      "repo": "verl-project/verl",
+      "description": "面向大语言模型的开源强化学习训练库，支持 PPO、GRPO 等后训练算法，可对接 vLLM、SGLang 等推理框架。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 24223,
+      "hidden": false
+    },
+    {
+      "repo": "xerj-org/xerj",
+      "description": "面向 bot 与 Agent 的 AI 搜索引擎和 MCP 服务器：单个 Rust 二进制即可索引代码、文档、日志和 PDF，提供 BM25 全文、向量与混合检索、代码搜索，以及 Agent 记忆与 RAG。",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 19006,
+      "hidden": true
+    },
+    {
+      "repo": "microsoft/agent-lightning",
+      "description": "微软开源的轻量级 Agent 强化学习框架，通过代理网关捕获真实交互，几乎不改代码即可训练 AI Agent。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 18949,
+      "hidden": false
+    },
+    {
+      "repo": "FlashML-org/FreeToken",
+      "description": "边缘端 MoE 推理引擎，通过带宽自适应 CPU–GPU 协同与专家缓存，在消费级硬件本地运行前沿规模开放权重模型。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 17139,
+      "hidden": false
+    },
+    {
+      "repo": "modelscope/ms-swift",
+      "description": "魔搭社区的模型训练框架，支持以 PEFT 或全参数方式对 600+ 个 LLM 和 300+ 个多模态大模型做 CPT/SFT/DPO/GRPO 训练。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 16100,
+      "hidden": false
+    },
+    {
+      "repo": "KimMeen/Time-LLM",
+      "description": "Time-LLM 官方实现：通过重编程将大语言模型用于通用时间序列预测，且不改变语言模型主干。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 2714,
+      "hidden": true
+    },
+    {
+      "repo": "loveuav/BlueSkyFlightControl",
+      "description": "天穹飞控是面向多旋翼无人机的开源飞控固件，包含姿态估计、串级 PID 控制与航线规划，并兼容 MAVLink 协议。",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 685,
+      "hidden": true
+    },
+    {
+      "repo": "NetManAIOps/ChatTS",
+      "description": "面向时间序列理解与推理的多模态大模型，通过合成数据将时间序列与 LLM 对齐，支持多变量序列的对话式问答与数值推理。",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 490,
+      "hidden": false
+    },
+    {
+      "repo": "hqhq1025/ai-course-notes",
+      "description": "398 份 AI/LLM 中文讲义，覆盖 CS336、CS224R、CS25、Berkeley LLM Agents 等课程，支持在线阅读、PDF 下载与 LaTeX 源码。",
+      "language": "TeX",
+      "languageColor": "#3D6117",
+      "stars": 220,
+      "hidden": true
+    }
+  ]
+}

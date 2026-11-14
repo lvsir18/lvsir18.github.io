@@ -1,0 +1,10 @@
+{
+  "name": "personal-website",
+  "private": true,
+  "scripts": {
+    "content": "node scripts/render-content.mjs",
+    "content:check": "node scripts/render-content.mjs --check",
+    "starred": "node scripts/render-content.mjs --only starred",
+    "projects": "node scripts/render-content.mjs --only projects"
+  }
+}

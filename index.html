@@ -50,6 +50,7 @@
       <nav class="nav" aria-label="主导航">
         <a href="#research">研究</a>
         <a href="#projects">项目</a>
+        <a href="#starred">推荐</a>
         <a href="#notes">笔记</a>
         <a href="#about">关于</a>
       </nav>
@@ -158,6 +159,8 @@
         <h2>项目与作品<span class="h2-en">Selected Work</span></h2>
       </div>
 
+      <!-- projects:start -->
+      <!-- 本区块由 scripts/render-content.mjs 根据 data/projects.json 生成，请勿手动编辑 -->
       <ol class="project-list">
         <li class="project reveal">
           <div class="project-top">
@@ -165,9 +168,7 @@
             <span class="project-meta">2026 · Python · Apache-2.0</span>
           </div>
           <p class="project-desc">
-            面向生物学 AI for Science 的结构化知识增强问答系统，基于 OpenSPG KAG 构建。
-            以知识图谱保证事实精确、以模型保证关联推理、以原文段落保证可溯源，支持多知识库、
-            schema 驱动的实体关系抽取与混合检索推理。
+            面向生物学 AI for Science 的结构化知识增强问答系统，基于 OpenSPG KAG 构建。以知识图谱保证事实精确、以模型保证关联推理、以原文段落保证可溯源，支持多知识库、schema 驱动的实体关系抽取与混合检索推理。
           </p>
           <p class="tags"><span>KAG</span><span>知识图谱</span><span>混合检索</span><span>可溯源问答</span></p>
           <a class="project-link" href="https://github.com/lvsir18/SCIKAG" target="_blank" rel="noopener">
@@ -182,8 +183,7 @@
             <span class="project-meta">2026 · Python · MIT</span>
           </div>
           <p class="project-desc">
-            面向黄金市场研究的全栈 AI Agent：从数据采集、分析推理到结论输出形成闭环，
-            强调过程可观测与结果可评测，让智能体的每一步判断都有据可查。
+            面向黄金市场研究的全栈 AI Agent：从数据采集、分析推理到结论输出形成闭环，强调过程可观测与结果可评测，让智能体的每一步判断都有据可查。
           </p>
           <p class="tags"><span>Agent</span><span>LLM 应用</span><span>可观测</span><span>可评测</span></p>
           <a class="project-link" href="https://github.com/lvsir18/GoldAgent" target="_blank" rel="noopener">
@@ -191,61 +191,123 @@
             <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
           </a>
         </li>
-
-        <li class="project reveal">
-          <div class="project-top">
-            <h3>Edge LLM on Jetson AGX Orin</h3>
-            <span class="project-meta">2026 · 部署实测</span>
-          </div>
-          <p class="project-desc">
-            在 Jetson AGX Orin 64GB 上部署本地大模型的完整实测：从 vLLM INT4 到 llama.cpp Q4_K_M，
-            记录吞吐、显存占用与工程取舍，以及在真实边缘硬件上运行模型的现实边界。
-          </p>
-          <p class="tags"><span>端侧推理</span><span>量化</span><span>vLLM</span><span>llama.cpp</span></p>
-          <a class="project-link" href="https://github.com/lvsir18/Edge-LLM-on-Jetson-Orin-64GB" target="_blank" rel="noopener">
-            查看仓库
-            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
-          </a>
-        </li>
-
-        <li class="project reveal">
-          <div class="project-top">
-            <h3>语音识别与处理课程实验</h3>
-            <span class="project-meta">2026 · Python · MIT</span>
-          </div>
-          <p class="project-desc">
-            四川大学语音识别与处理课程实验集合，包含语音增强、语音识别、说话人识别与语音合成
-            四个独立实验，覆盖从信号处理到深度模型建模的完整语音链路。
-          </p>
-          <p class="tags"><span>ASR</span><span>语音增强</span><span>说话人识别</span><span>TTS</span></p>
-          <a class="project-link" href="https://github.com/lvsir18/Sichuan-University-2026-Autumn-Speech-Recognition-and-Processing-Lecture-Experiment" target="_blank" rel="noopener">
-            查看仓库
-            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
-          </a>
-        </li>
-
-        <li class="project reveal">
-          <div class="project-top">
-            <h3>Claw Voice Agent</h3>
-            <span class="project-meta">2026 · Python · 协作项目</span>
-          </div>
-          <p class="project-desc">
-            本地优先的语音智能体工作台，整合 OpenClaw、语音识别、唤醒词与语音合成，
-            在完全本地的环境中完成「唤醒—识别—理解—回应」的实时闭环。
-          </p>
-          <p class="tags"><span>Voice Agent</span><span>Local-first</span><span>OpenClaw</span></p>
-          <a class="project-link" href="https://github.com/lvsir18/Claw-Voice-Agent" target="_blank" rel="noopener">
-            查看仓库
-            <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
-          </a>
-        </li>
       </ol>
+      <!-- projects:end -->
+    </section>
+
+    <!-- Starred -->
+    <section class="section wrap" id="starred">
+      <div class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2>推荐项目<span class="h2-en">Starred</span></h2>
+      </div>
+      <p class="section-intro reveal">我在 GitHub 上 Star 的开源项目，按 Star 数排列——大多围绕 agent harness、后训练、推理服务与时序建模。</p>
+
+      <!-- starred:start -->
+      <!-- 本区块由 scripts/render-content.mjs 根据 data/starred.json 生成，请勿手动编辑 -->
+      <ul class="starred-list">
+        <li class="starred reveal">
+          <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">deepseek-ai /</span> deepseek-harness</span>
+            <span class="starred-desc">DeepSeek 开源的智能体运行框架，采用一切皆插件架构、由 Cordis 驱动，并提供 Web UI。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3178c6"></span>TypeScript</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>280,227</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/shareAI-lab/learn-claude-code" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">shareAI-lab /</span> learn-claude-code</span>
+            <span class="starred-desc">以 Python 从零实现一个 nano 版 Claude Code 式 agent harness 的教学仓库，逐课拆解 agent 循环、工具调用、权限与上下文管理等机制。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3572A5"></span>Python</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>80,366</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/yetone/magpie" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">yetone /</span> magpie</span>
+            <span class="starred-desc">菜单栏应用兼本地网关，为 Claude Code、Codex 等编码智能体统一选择任意模型和账号，配额耗尽时自动转用下一个。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #00ADD8"></span>Go</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>35,897</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/verl-project/verl" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">verl-project /</span> verl</span>
+            <span class="starred-desc">面向大语言模型的开源强化学习训练库，支持 PPO、GRPO 等后训练算法，可对接 vLLM、SGLang 等推理框架。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3572A5"></span>Python</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>24,223</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/microsoft/agent-lightning" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">microsoft /</span> agent-lightning</span>
+            <span class="starred-desc">微软开源的轻量级 Agent 强化学习框架，通过代理网关捕获真实交互，几乎不改代码即可训练 AI Agent。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3572A5"></span>Python</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>18,949</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/FlashML-org/FreeToken" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">FlashML-org /</span> FreeToken</span>
+            <span class="starred-desc">边缘端 MoE 推理引擎，通过带宽自适应 CPU–GPU 协同与专家缓存，在消费级硬件本地运行前沿规模开放权重模型。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3572A5"></span>Python</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>17,139</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/modelscope/ms-swift" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">modelscope /</span> ms-swift</span>
+            <span class="starred-desc">魔搭社区的模型训练框架，支持以 PEFT 或全参数方式对 600+ 个 LLM 和 300+ 个多模态大模型做 CPT/SFT/DPO/GRPO 训练。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3572A5"></span>Python</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>16,100</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="starred reveal">
+          <a href="https://github.com/NetManAIOps/ChatTS" target="_blank" rel="noopener">
+            <span class="starred-title"><span class="starred-owner">NetManAIOps /</span> ChatTS</span>
+            <span class="starred-desc">面向时间序列理解与推理的多模态大模型，通过合成数据将时间序列与 LLM 对齐，支持多变量序列的对话式问答与数值推理。</span>
+            <span class="starred-meta">
+              <span class="starred-lang"><span class="lang-dot" style="--dot: #3572A5"></span>Python</span>
+              <span class="starred-stars"><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.94 4.05 4.44.62-3.22 3.09.78 4.4L8 11.67l-3.94 2.09.78-4.4L1.62 6.27l4.44-.62z"/></svg><span class="sr-only">GitHub stars</span>490</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <!-- starred:end -->
+
+      <p class="starred-more reveal">
+        <a href="https://github.com/lvsir18?tab=stars" target="_blank" rel="noopener">
+          在 GitHub 查看完整 Star 列表
+          <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>
+        </a>
+      </p>
     </section>
 
     <!-- Notes -->
     <section class="section wrap" id="notes">
       <div class="section-head reveal">
-        <span class="section-index">03</span>
+        <span class="section-index">04</span>
         <h2>学习与笔记<span class="h2-en">Notes</span></h2>
       </div>
       <p class="section-intro reveal">把读过的课程整理成可复用的文字，公开分享，也方便自己回看。</p>
@@ -285,7 +347,7 @@
     <!-- About -->
     <section class="section wrap" id="about">
       <div class="section-head reveal">
-        <span class="section-index">04</span>
+        <span class="section-index">05</span>
         <h2>关于<span class="h2-en">About</span></h2>
       </div>
 
