@@ -612,52 +612,57 @@ h2 {
 
 /* ---------------- starred ---------------- */
 
-.starred-list { border-top: 1px solid var(--line); }
-
-.starred a {
+.starred-list {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-    "title meta"
-    "desc  meta";
-  gap: 3px 24px;
-  padding: 18px 0 19px;
-  border-bottom: 1px solid var(--line);
-  transition: padding-left 0.3s var(--ease);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.starred a:hover { padding-left: 8px; }
+.starred {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  transition: border-color 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+
+.starred:hover {
+  border-color: var(--line-strong);
+  background: var(--accent-soft);
+}
+
+.starred a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 22px 18px;
+}
 
 .starred-title {
-  grid-area: title;
   font-family: var(--serif);
-  font-size: 0.98rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.45;
   transition: color 0.25s var(--ease);
 }
 .starred a:hover .starred-title { color: var(--accent); }
 
 .starred-owner {
   color: var(--muted);
-  font-size: 0.92em;
+  font-size: 0.9em;
 }
 
 .starred-desc {
-  grid-area: desc;
-  max-width: 56em;
-  font-size: 0.85rem;
-  line-height: 1.72;
+  margin-top: 8px;
+  font-size: 0.84rem;
+  line-height: 1.7;
   color: var(--muted);
 }
 
 .starred-meta {
-  grid-area: meta;
-  align-self: center;
-  justify-self: end;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 0.73rem;
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 0.72rem;
   letter-spacing: 0.05em;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
@@ -847,12 +852,8 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   }
   .note-meta { margin-top: 6px; }
 
-  .starred a {
-    grid-template-columns: 1fr;
-    grid-template-areas: "title" "desc" "meta";
-    gap: 3px 0;
-  }
-  .starred-meta { justify-self: start; margin-top: 7px; }
+  .starred-list { grid-template-columns: 1fr; gap: 10px; }
+  .starred a { padding: 18px 18px 16px; }
   .starred-more { margin-top: 18px; }
 
   .about-grid { grid-template-columns: 1fr; gap: 38px; }
