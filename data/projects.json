@@ -1,6 +1,19 @@
 {
   "items": [
     {
+      "name": "CareerPilot",
+      "meta": "2026 · Next.js + FastAPI · MIT",
+      "description": "面向实习与校招的本地求职工作台：只收录能读到官方详情页的岗位，按技能做可解释匹配，并用 LangGraph Agent 串联简历画像、投递看板与面试日历。长任务进入队列，支持断点续跑与协作式取消。",
+      "tags": [
+        "Agent",
+        "LangGraph",
+        "全栈",
+        "可解释匹配"
+      ],
+      "url": "https://github.com/lvsir18/CareerPilot",
+      "hidden": false
+    },
+    {
       "name": "SCIKAG",
       "badge": "精选",
       "meta": "2026 · Python · Apache-2.0",
